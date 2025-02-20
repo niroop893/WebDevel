@@ -1,3 +1,6 @@
-body {
-    background-color: aquamarine;
+th{
+    border: 20px solid blue;
+}
+td{
+    border: 2px solid black;
 }
