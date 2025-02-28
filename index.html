@@ -10,6 +10,102 @@
 </head>
 
 <body>
+    <header>
+        <h1 style="color: yellow; background-color: lightsteelblue">My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        div, span {
+            color: brown;
+            background-color: beige;
+        }
+        h1{
+            background-color: cadetblue;
+            color: lightcyan
+        }
+        .col{
+            background-color: blueviolet;
+        }
+        #green{
+            background-color: green;
+        }
+        div > p {
+            background-color: chartreuse;
+        }
+        div p {
+            background-color: chartreuse;
+        }
+        * {
+            margin: 5px;
+            padding : 5px;
+            
+        }
+        a:visited{
+            color: yellow
+        }
+        a:link{
+            color: blueviolet
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: crimson;
+        }
+        p:first-child{
+            background-color: aquamarine;
+        }
+        .box1{
+            background-color: darkkhaki;
+            padding: 0.1em;
+            margin: 0.1em;
+            border: 10px;
+            width: 150px;
+            height: 30px;
+            box-sizing: border-box;
+        }
+        .box2{
+            background-color: greenyellow;
+            padding: 0.2em;
+            margin: 0.5em;
+            border: 20px;
+            width: 150px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <div class="col">
+        <h1>CSS Selector</h1>
+    </div>
+    <div id="green">
+        <h1>CSS ID Selector</h1>
+        <p>Hello hwo goin</p>
+    </div>
+    <div class="one box box1">
+        this is one
+    </div>
+    <div class="one box box2">
+        this is two
+    </div>
+    <aside>
+        <p>This is an aside content</p>
+      </aside>
+    <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+    </nav>
+    
+   
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maiores provident suscipit repellat fuga harum
         perspiciatis qui, facilis numquam possimus? Voluptate in veritatis sit accusantium, corrupti recusandae
         perferendis voluptatum odio.</p>
@@ -19,17 +115,56 @@
     <div class="container" style="background-color: rgb(246, 246, 248); color: rgb(19, 19, 18);">
         <h2 aria-label="center">Hi All</h2>
 
+        <article>
+            <h2>Article Title</h2>
+            <section>
+              <p>Content here</p>
+            </section>
+        </article>
+
+        <figure>
+            <img src="./img.svg" alt="An example image">
+            <figcaption>This is an example image.</figcaption>
+        </figure>
+
         <img width=630 height=450 src="train.jpg" alt="'Train Name" />
         <p>I am para</p>
         <a href=https://www.google.com>Google</a>
         <div class="container"
         <form action="/submit" method="post">
             <h1>Form to apply for TA for webdevel</h1>
-            <label for="username">Enter your username</label>
+            <div id="firstdiv" class="red bg-yellow">First</div>
+            <div id="seconddiv">Second</div>
+            <span class="red"></span>
+            <video src="./WhatsApp Video 2025-02-24 at 10.45.22.mp4" height="255" width="255" controls="true">Durga Pooja</video>
+            <audio src="./WhatsApp Video 2025-02-24 at 10.45.22.mp4" height="255" width="255" controls="true">Durga Pooja</audio>
+
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <img src="img.svg" alt="Sample SVG">
+
+            <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" width="322" height="222"></iframe>
+            <div>
+            <label for="username">Enter your username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username here"
+            </div>
+            <div>
+                <div>
             <!-- Password input -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+            <label for="City">City:</label>
+            <input type="City" id="City" name="City" required>
+            </div>
+            <div>
+            <label for="District">District:</label>
+            <input type="District" id="District" name="District" required>
+            </div>
+            <label for="Country">Country:</label>
+            <input type="Country" id="Country" name="Country" required>
         </div>
             <div class="container">
                 <label>Gender:</label>
@@ -81,6 +216,15 @@
             <li>Donald</li>
         </ol>
     </div>
+    <pre>
+    Copyright @copy; Niroop
+    <code>
+        alert(document.cookie)
+    </code>
+    </pre>
+    <footer>
+        <p>Copyright 2023</p>
+    </footer>
 </body>
 
 </html>

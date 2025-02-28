@@ -13,3 +13,20 @@ a{
 div{
     background-color: cornsilk;
 }
+
+.red{
+    background-color: burlywood;
+    
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{
+    background-color: blue;
+}
+
+h1{
+    background-color: lightskyblue;
+    color: lightcyan
+}
